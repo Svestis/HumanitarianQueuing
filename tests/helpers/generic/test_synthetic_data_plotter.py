@@ -12,9 +12,10 @@ import pandas as pd
 import pytest
 import shutil
 from tempfile import mkdtemp
-from helpers.generic.synthetic_data_plotter import plot_histogram, plot_count, plot_dataset, OUTPUT_DIR
+from src.helpers.generic.synthetic_data_plotter import plot_histogram, plot_count, plot_dataset, OUTPUT_DIR
 from typing import Generator
-from helpers.generic import synthetic_data_plotter
+from src.helpers.generic import synthetic_data_plotter
+
 
 @pytest.fixture
 def sample_df() -> pd.DataFrame:

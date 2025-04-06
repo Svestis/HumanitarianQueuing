@@ -190,7 +190,7 @@ def data_generator(config: dict) -> pd.DataFrame:
 
 
 def save(config_type: Optional[str] = 'triangular',
-         file_path: Optional[str] = "./resources/data_generator/synthetic_data.csv") -> pd.DataFrame:
+         file_path: Optional[str] = "./src/resources/data_generator/synthetic_data.csv") -> pd.DataFrame:
     """
     Generate and save a synthetic dataset to a CSV file
     :param config_type: The key identifying which configuration file to load

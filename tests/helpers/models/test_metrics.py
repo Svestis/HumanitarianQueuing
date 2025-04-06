@@ -7,7 +7,7 @@ Last Updated: 2025_04_06
 """
 import pandas as pd
 from datetime import datetime
-from helpers.models.metrics import calculate_metrics
+from src.helpers.models.metrics import calculate_metrics
 
 def test_metrics_with_valid_data() -> None:
     """

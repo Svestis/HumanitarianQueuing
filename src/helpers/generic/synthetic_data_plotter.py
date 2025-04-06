@@ -12,13 +12,13 @@ import matplotlib
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from helpers.generic.word_generator import append_images, append_table_from_df
+from src.helpers.generic.word_generator import append_images, append_table_from_df
 from typing import Optional, Callable, Any
 import re
 
 matplotlib.use('Agg')  # Non GUI - save to file
 
-OUTPUT_DIR = "./resources/synthetic_data_summary/"
+OUTPUT_DIR = "./src/resources/synthetic_data_summary/"
 
 def save_plot(title: str, output_path: str = OUTPUT_DIR) -> str:
     """

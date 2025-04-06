@@ -9,7 +9,7 @@ from datetime import datetime
 import _pytest.monkeypatch
 import pytest
 import pandas as pd
-from helpers.generic.data_generator import load_config, validate_config, data_generator, CONFIG_MAP, save
+from src.helpers.generic.data_generator import load_config, validate_config, data_generator, CONFIG_MAP, save
 from pathlib import Path
 
 def test_load_config_valid() -> None:

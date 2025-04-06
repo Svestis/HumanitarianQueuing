@@ -13,7 +13,7 @@ from docx.shared import Inches
 import os
 
 def append_images(image_paths: list[str], captions: list[str], heading: Optional[str] = None,
-                  doc_path: Optional[str] ="./resources/initial_data.docx") -> None:
+                  doc_path: Optional[str] ="./src/resources/initial_data.docx") -> None:
     """
     Write images and captions to a word file
     :param image_paths: List of image file paths
@@ -47,7 +47,7 @@ def append_images(image_paths: list[str], captions: list[str], heading: Optional
 
 
 def append_table_from_df(df: pd.DataFrame, heading: Optional[str] = None,
-                         doc_path: Optional[str] = "./resources/initial_data.docx") -> None:
+                         doc_path: Optional[str] = "./src/resources/initial_data.docx") -> None:
     """
     Append a table from df to the word file
     :param df: A dataframe to write as table
