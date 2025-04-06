@@ -1,0 +1,29 @@
+{
+  "num_records": 1000,
+  "columns": {
+    "gender": {
+      "values": ["Male", "Female", "Other"],
+      "probabilities": [0.48, 0.48, 0.04]
+    },
+    "age": {
+      "distribution": "triangular",
+      "params": { "left": 0, "mode": 30, "right": 100 }
+    },
+    "transaction_time": {
+      "distribution": "triangular",
+      "params": { "left": 3, "mode": 10, "right": 30 }
+    },
+    "vulnerability_score": {
+      "distribution": "beta",
+      "params": { "a": 2, "b": 5 }
+    },
+    "start_time": "08:00"
+  },
+  "arrival_time": {
+    "distribution": "uniform",
+    "params": {
+      "low": 0,
+      "high": 600
+    }
+  }
+}
