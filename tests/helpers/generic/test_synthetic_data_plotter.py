@@ -12,7 +12,7 @@ import pandas as pd
 import pytest
 import shutil
 from tempfile import mkdtemp
-from src.helpers.generic.synthetic_data_plotter import plot_histogram, plot_count, plot_dataset, OUTPUT_DIR
+from src.helpers.generic import plot_histogram, plot_count, plot_dataset, OUTPUT_DIR
 from typing import Generator
 from src.helpers.generic import synthetic_data_plotter
 
@@ -113,7 +113,7 @@ def test_plot_dataset_runs_without_error(tmp_path: pathlib.Path) -> None:
     df.to_csv(test_csv, index=False)
     plot_dataset(file_path=str(test_csv))
 
-    assert os.path.isdir("./resources/synthetic_data_summary")
+    assert os.path.isdir("./src/resources/synthetic_data_summary")
 
 def test_plot_histogram_raises_with_invalid_column(sample_df: pd.DataFrame, tmp_output_dir: pathlib.Path)\
         -> None:

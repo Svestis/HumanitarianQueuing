@@ -9,7 +9,7 @@ import pandas as pd
 from pathlib import Path
 import pytest
 from docx import Document
-from src.helpers.generic.word_generator import append_images, append_table_from_df
+from src.helpers.generic import append_images, append_table_from_df
 from PIL import Image
 
 def test_append_table_creates_doc(tmp_path: Path) -> None:

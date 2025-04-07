@@ -19,7 +19,17 @@ def run_tests() -> None:
         "helpers/generic/test_synthetic_data_plotter.py",
         "helpers/generic/test_word_generator.py",
         "helpers/models/test_metrics.py",
-        "helpers/models/test_util.py"
+        "helpers/models/test_util.py",
+        "models/base/test_fifo.py",
+        "models/base/test_lifo.py",
+        "models/base/test_mmc.py",
+        "models/base/test_sjf.py",
+        "models/base/test_ros.py",
+        "models/priority/test_community.py",
+        "models/priority/test_context.py",
+        "models/priority/test_fair.py",
+        "models/priority/test_fair_prop.py",
+        "models/priority/test_priority.py"
     ]
 
     results = {}
@@ -48,3 +58,5 @@ def cleanup() -> None:
 if __name__ == "__main__":
     cleanup()
     run_tests()
+
+# TODO: Modul common tests
